@@ -16,7 +16,7 @@ export function convertDate(date: Date) {
 export function getBaseURL(){
     if(process.env.NODE_ENV==='production'){
         //production
-        return "https://coding-havoc-go-back-end-f2fc12ab6286.herokuapp.com/"
+        return "https://coding-havoc-go-back-end-f2fc12ab6286.herokuapp.com"
     } else {
         //development
         return "http://localhost:8181"
