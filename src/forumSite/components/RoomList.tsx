@@ -12,7 +12,7 @@ export const RoomList: React.FC<{}> = () =>{
     // console.log("RoomList:",location)
     //Need to add logic to get /rooms/all and build the list below
     const baseUrl = getBaseURL()
-    console.log("baseUrlTest:",baseUrl)
+    // console.log("baseUrlTest:",baseUrl)
 
     useEffect(() => {
         const queryUrl: string = `${baseUrl}/rooms/all`;
@@ -23,7 +23,7 @@ export const RoomList: React.FC<{}> = () =>{
                 throw new Error('Something went wrong')
             }
             const responseJson = await response.json();
-            console.log(responseJson)
+            // console.log(responseJson)
             const rooms: Room[] = []
             for (let i: number = 0; i < responseJson.length; i++) {
                 rooms.push({
